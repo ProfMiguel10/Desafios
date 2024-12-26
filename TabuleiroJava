@@ -1,0 +1,17 @@
+package exemplo;
+
+public class Tabuleiro {
+    public static void main(String[] args) {
+        int[] Trigo = new int[16]; // Armazena os grãos em cada casa
+        int TotalTrigo = 0; // Acumulador 
+        for (int i = 0; i < 16; i++) {
+            Trigo[i] = (int) Math.pow(2, i); 
+            TotalTrigo += Trigo[i]; //
+        }
+        for (int i = 0; i < 16; i++) {
+            System.out.println("Grãos de trigo na casa " + (i + 1) + " = " + Trigo[i]);
+        }
+        System.out.println("Total no tabuleiro = " + TotalTrigo);
+    }
+}
+
