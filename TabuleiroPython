@@ -1,0 +1,16 @@
+def main():
+    Trigo = [0] * 16  # Armazena os grãos em cada casa
+    TotalTrigo = 0    # Acumulador
+
+    for i in range(16):
+        Trigo[i] = 2**i  
+        TotalTrigo += Trigo[i]  
+
+    for i in range(16):
+        print(f"Grãos de trigo na casa {i + 1} = {Trigo[i]}")
+
+    print(f"Total no tabuleiro = {TotalTrigo}")
+
+
+if __name__ == "__main__":
+    main()
