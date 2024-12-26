@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+ 
+    const char* textos[] = {
+        "Texto 1",
+        "Texto 2",
+        "Texto 3",
+        "Texto 4",
+        "Texto 5",
+        "Texto 6",
+        "Texto 7.",
+    };
+
+    int total = sizeof(textos) / sizeof(textos[0]);
+    srand(time(NULL));
+    int i = rand() % total;
+    printf("Texto: \n%s\n", textos[i]);
+    return 0;
+}
