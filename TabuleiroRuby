@@ -1,0 +1,13 @@
+Trigo = Array.new(16) # Armazena os grãos em cada casa
+TotalTrigo = 0 # Acumulador
+
+(0...16).each do |i|
+  Trigo[i] = 2**i
+  TotalTrigo += Trigo[i] 
+end
+
+(0...16).each do |i|
+  puts "Grãos de trigo na casa #{i + 1} = #{Trigo[i]}"
+end
+
+puts "Total no tabuleiro = #{TotalTrigo}"
